@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleBot renders message text for speed "fast" 1`] = `""This is fun!""`;
+
+exports[`ToggleBot renders message text for speed "off" 1`] = `""Hello! Nice to meet you.""`;
+
+exports[`ToggleBot renders message text for speed "off-axis" 1`] = `""...I'm gonna be sick...""`;
+
+exports[`ToggleBot renders message text for speed "slow" 1`] = `""Awesome, look at you go!""`;
+
+exports[`ToggleBot renders message text for speed "surprise" 1`] = `""What the unicorn?""`;

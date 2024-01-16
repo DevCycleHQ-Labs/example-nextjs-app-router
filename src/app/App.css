@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    29deg,
+    rgba(109, 40, 217, 0.1) 0%,
+    rgba(255, 255, 255, 0.5) 20%,
+    rgba(255, 255, 255, 0) 23%
+  ),
+  linear-gradient(
+    305deg,
+    rgba(29, 78, 216, 0.1) 0%,
+    rgba(255, 255, 255, 0.5) 25.5%,
+    rgba(255, 255, 255, 0) 26.5%
+  );
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.App-header {
+  margin-bottom: 1em;
+  font-size: 14px;
+}
+
+.App-header p {
+  margin: 0;
+  color: #14B8A6;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.App-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #F9FAFB;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 730px;
+  margin: 0.5em;
+}
+
+.App-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  width: 100%;
+}
+
+.App-description {
+  padding: 1em 1.5em;
+  background: #FFFFFF;
+  border-top: 2px solid #E5E7EB;
+  color: #000000;
+  font-size: 14px;
+}
+.App-description > * {
+  margin-bottom: 1em;
+}
+
+.App-link {
+  color: #1D4ED8;
+}
+
+.ToggleBot-message {
+  position: relative;
+  color: #1D4ED8;
+  background-color: #FFFFFF;
+  border: 2px solid #1D4ED8;
+  border-radius: 6px;
+  padding: 1.2em;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+.ToggleBot-message:after {
+  content: ' ';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  transform: rotate(45deg);
+  left: calc(50% - 15px);
+  bottom: -17px;
+  background-color: #FFFFFF;
+  border: 2px solid transparent;
+  border-right-color: #1D4ED8;
+  border-bottom-color: #1D4ED8;
+}
+
+.ToggleBot-logo {
+  height: 220px;
+  margin: 1em;
+  pointer-events: none;
+}
+
+.ToggleBot-variation {
+  width: 80%;
+  margin-top: 1em;
+  padding: 1em;
+  color: #FFFFFF;
+  background: linear-gradient(270deg, #071746 0%, #111827 100%);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spin-slow {
+    animation: Spin infinite 5s linear;
+  }
+  .spin-fast {
+    animation: Spin infinite 1s linear;
+  }
+  .spin-off-axis {
+    animation: SpinOffAxis 3s linear infinite;
+  }
+}
+
+@keyframes Spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes SpinOffAxis {
+  0% {
+    transform: rotateY(0deg) rotate(0deg);
+  }
+  50% {
+      transform: rotateY(180deg) rotate(180deg);
+  }
+  100% {
+      transform: rotateY(360deg) rotate(360deg);
+  }
+}
