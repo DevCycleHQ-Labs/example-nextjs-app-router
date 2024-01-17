@@ -18,7 +18,7 @@ export default async function RootLayout({
       <link rel="icon" href="/favicon.svg" sizes="any" />
       <body>
         <DevCycleClientsideProvider
-            context={await getClientContext()}
+            context={getClientContext()}
         >
             {children}
         </DevCycleClientsideProvider>
