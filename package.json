@@ -11,9 +11,9 @@
     "open-browser": "open http://localhost:3000"
   },
   "dependencies": {
-    "@devcycle/nextjs-sdk": "^0.0.1-beta.12",
+    "@devcycle/nextjs-sdk": "^1.0.0",
     "classnames": "^2.5.1",
-    "next": "14.0.4",
+    "next": "14.0.5-canary.59",
     "react": "^18",
     "react-dom": "^18"
   },
