@@ -17,6 +17,7 @@ const { getVariableValue, getClientContext } = setupDevCycle(
     // pass any options you want to use for the DevCycle SDK
     {
         enableStreaming: false,
+        eventFlushIntervalMS: 1000,
     },
 )
 
