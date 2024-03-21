@@ -26,8 +26,8 @@ function ToggleBot() {
         src={getImageSource(spinSpeed, shouldWink)}
         className={classNames(['ToggleBot-logo', `spin-${spinSpeed}`])}
         alt="togglebot"
-        width={200}
-        height={220}
+        width={240}
+        height={198}
       />
       <div className="ToggleBot-variation">
         Serving Variation: <b>&quot;{variationName}&quot;</b>
@@ -53,7 +53,7 @@ const getMessage = (spinSpeed: string) => {
 
 const getImageSource = (spinSpeed: string, shouldWink: boolean) => {
   if (spinSpeed === 'surprise') return 'unicorn.svg'
-  return shouldWink ? '/togglebot-wink.png' : '/togglebot.png'
+  return shouldWink ? '/togglebot-wink.svg' : '/togglebot.svg'
 }
 
 export default ToggleBot;
