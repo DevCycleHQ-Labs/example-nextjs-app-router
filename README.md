@@ -14,8 +14,9 @@ When you run the example app and switch your identity between users, you'll be a
 ### Setup
 
 * Run `npm install` in the project directory to install dependencies
-* Create a `.env` file and set `NEXT_PUBLIC_DEVCYCLE_CLIENT_SDK_KEY` to the SDK Key for your environment.\
-You can find this under [Settings > Environments](https://app.devcycle.com/r/environments) on the DevCycle dashboard. [Learn more about environments](https://docs.devcycle.com/essentials/environments).
+* Create a `.env` file and set `NEXT_PUBLIC_DEVCYCLE_CLIENT_SDK_KEY` and `NEXT_PUBLIC_DEVCYCLE_SERVER_SDK_KEY` 
+to the SDK Key for your environment.\
+   * You can find this under [Settings > Environments](https://app.devcycle.com/r/environments) on the DevCycle dashboard. [Learn more about environments](https://docs.devcycle.com/essentials/environments).
 
 ### Development
 
