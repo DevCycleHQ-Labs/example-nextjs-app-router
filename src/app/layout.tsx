@@ -1,11 +1,12 @@
-import type { Metadata } from 'next'
-import './App.css'
+import type { Metadata } from "next"
+import "./App.css"
 
-import { DevCycleClientsideProvider } from '@devcycle/nextjs-sdk'
-import { getClientContext } from './devcycle'
+import { DevCycleClientsideProvider } from "@devcycle/nextjs-sdk"
+import { getClientContext } from "./devcycle"
+import { UserProvider } from "@auth0/nextjs-auth0/client"
 
 export const metadata: Metadata = {
-  title: 'DevCycle Next.js Example App'
+  title: "DevCycle Next.js Example App",
 }
 
 export default async function RootLayout({
@@ -15,14 +16,14 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/favicon.svg" sizes="any" />
-      <body>
-        <DevCycleClientsideProvider
-            context={getClientContext()}
-        >
+      <UserProvider>
+        <link rel="icon" href="/favicon.svg" sizes="any" />
+        <body>
+          <DevCycleClientsideProvider context={getClientContext()}>
             {children}
-        </DevCycleClientsideProvider>
-      </body>
+          </DevCycleClientsideProvider>
+        </body>
+      </UserProvider>
     </html>
   )
 }

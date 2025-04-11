@@ -1,6 +1,8 @@
-import Description from '@/components/Description'
-import ToggleBot from '@/components/ToggleBot'
-import Image from 'next/image'
+import Description from "@/components/Description"
+import IsAdmin from "@/components/IsAdmin"
+import ToggleBot from "@/components/ToggleBot"
+import UserDetails from "@/components/userDeatils"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         />
       </div>
       <div className="App-wrapper">
+        <IsAdmin />
+        <UserDetails />
         <ToggleBot />
         <Description />
       </div>
