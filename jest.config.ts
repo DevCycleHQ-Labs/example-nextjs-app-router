@@ -9,6 +9,10 @@ const createJestConfig = nextJest({
 // Add any custom config to be passed to Jest
 const config: Config = {
   testEnvironment: 'jsdom',
+  setupFiles: ['<rootDir>/jest.setup.ts'],
+  testTimeout: 10000,
+  forceExit: true,
+  detectOpenHandles: false,
 }
 
 const esModules = ['@devcycle/nextjs-sdk', 'uuid'].join('|')

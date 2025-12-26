@@ -4,7 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-.yarn/install-state.gz
+.yarn/
+.yarnrc.yml
+yarn.lock
 
 # testing
 /coverage
@@ -19,6 +21,7 @@
 # misc
 .DS_Store
 *.pem
+.idea/
 
 # debug
 npm-debug.log*
